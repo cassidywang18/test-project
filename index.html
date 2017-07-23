@@ -2,17 +2,45 @@
 <html>
   <head>
     <title>Test Document</title>
+    <style>
+     <div class="title">
+          <h2>PLASTIC BAG BAN</h2>
+    <div class="parent">
+      <img class="plastic" src="http://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/NJ.bag.jpg" />
+      <div class="square hidden"/>
+      <p> 11 states have enacted plastic bag legislation. </P>
+      <P> Between 2015 and 2016 at least 77 bills have been proposed by 23 states regarding the regulation of plastic bags in retail settings.
+      </p>
+      </div>
+    </div>
+    </style>
   </head>
   <body>
- <div class="title">
-      <h2>PLASTIC BAG BAN</h2>
-<div class="parent">
-  <img class="plastic" src="http://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/NJ.bag.jpg" />
-  <div class="square hidden"/>
-  <p> 11 states have enacted plastic bag legislation. </P>
-  <P> Between 2015 and 2016 at least 77 bills have been proposed by 23 states regarding the regulation of plastic bags in retail settings.
-  </p>
+   <div class="title">
+        <h2>PLASTIC BAG BAN</h2>
+  <div class="parent">
+    <img class="plastic" src="http://d3583ivmhhw2le.cloudfront.net/images/uploads/blog/NJ.bag.jpg" />
+    <div class="square hidden"/>
+    <p> 11 states have enacted plastic bag legislation. </P>
+    <P> Between 2015 and 2016 at least 77 bills have been proposed by 23 states regarding the regulation of plastic bags in retail settings.
+    </p>
+    </div>
   </div>
-</div>
+  <script>
+    var parent = document.querySelector(".parent");
+var square = document.querySelector(".square");
+
+parent.addEventListener("mouseover", onMouseover);
+parent.addEventListener("mouseout", onMouseout);
+
+function onMouseover() {
+  square.classList.remove("hidden")
+}
+
+function onMouseout() {
+  square.classList.add("hidden")
+  console.log("hi")
+}
+  </script>
   </body>
   </html>
